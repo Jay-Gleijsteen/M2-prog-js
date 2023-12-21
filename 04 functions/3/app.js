@@ -1,3 +1,7 @@
+
+
+
+
 function heeftEenResultaat()
 {
     let resultaat =1;
