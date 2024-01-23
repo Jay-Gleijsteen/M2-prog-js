@@ -6,9 +6,61 @@ class App {
         g.fillRect(0, 0, canvas.width, canvas.height);
         this.tekenHuis(g, 30, 30)
         this.tekenHuis(g, 100, 30)
+        this.tekenhuis2(g, 20, 10)
         this.tekenKerstBoom(g, 0, 0)
     }
+    tekenhuis2(g, x, y) {
+        g.beginPath()
+        g.fillStyle = "blue";
+        g.moveTo(30, 10);
+        g.lineTo(20, 30);
+        g.lineTo(60, 40);
+        g.lineTo(70, 20);
+        g.stroke()
+        g.fill()
+        g.closePath()
 
+        g.beginPath()
+        g.moveTo(20, 30);
+        g.lineTo(20, 50);
+        g.lineTo(60, 60);
+        g.lineTo(60, 40);
+        g.fillStyle = "yellow";
+        g.stroke()
+        g.fill()
+        g.closePath()
+
+        g.beginPath()
+        g.moveTo(60, 40);
+        g.lineTo(60, 60);
+        g.lineTo(80, 50);
+        g.lineTo(80, 30);
+        g.fillStyle = "purple";
+        g.stroke()
+        g.fill()
+        g.closePath()
+
+        g.beginPath()
+        g.moveTo(60, 40);
+        g.lineTo(80, 30);
+        g.lineTo(70, 20);
+        g.fillStyle = "green";
+        g.stroke()
+        g.fill()
+        g.closePath()
+
+        g.beginPath()
+        //g.moveTo(400, 450)
+        g.lineTo(50, 40);
+        g.lineTo(50, 55);
+        g.lineTo(30, 50);
+        g.lineTo(30, 35);
+
+        g.fillStyle = "red";
+        g.stroke()
+        g.fill()
+        g.closePath()    
+    }
     tekenHuis(g, x, y) {
         g.beginPath()
         g.fillStyle = "red";
@@ -50,7 +102,7 @@ class App {
         g.closePath()
 
         g.beginPath()
-        // g.moveTo(400, 450)
+        //g.moveTo(400, 450)
         g.lineTo(500, 400);
         g.lineTo(500, 550);
         g.lineTo(300, 500);
